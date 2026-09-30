@@ -1,4 +1,4 @@
-# typer
+# typr
 
 A lightweight, terminal-based typing speed and accuracy tester written in C.
 
