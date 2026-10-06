@@ -46,5 +46,9 @@ double calc_accuracy(char *typed, char *reference)
     int mistakes = edit_distance(typed, reference);
 
     double accuracy = ((reference_length - mistakes) / (double) reference_length) * 100;
+    if (mistakes >= reference_length)
+    {
+        accuracy = 0.0;
+    }
     return accuracy;
 }
