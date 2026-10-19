@@ -16,26 +16,7 @@ uint64_t get_ms(void)
 int count_words(char *text)
 {
     size_t length = strlen(text);
-    int words = 0;
-    bool inside_word = false;
-
-    for (size_t i = 0; i < length; i++)
-    {
-        if (text[i] == ' ')
-        {
-            // between words
-            inside_word = false;
-        }
-        else
-        {
-            // in a word
-            if (!inside_word)
-            {
-                words++;
-                inside_word = true;
-            }
-        }
-    }
+    int words = length / AVERAGE_WORD;
 
     return words;
 }
