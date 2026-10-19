@@ -7,6 +7,7 @@
 #define MS_PER_SEC  1000
 #define SEC_PER_MIN 60
 #define NUMBER_OF_LINES 85
+#define AVERAGE_WORD 5
 
 // includes 
 #include <stdint.h>
